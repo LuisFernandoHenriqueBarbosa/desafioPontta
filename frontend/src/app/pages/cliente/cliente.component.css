@@ -1,0 +1,55 @@
+.container {
+  width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #2a2b2c;
+  border-radius: 16px;
+  box-shadow: 0 0 20px #0005;
+  color: #fff;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+label {
+  font-size: 0.7rem;
+  margin-bottom: 4px;
+}
+
+input {
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #ffffff55;
+  background: #232425;
+  color: #fff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+thead tr {
+  background: #1d1e1f;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #ffffff22;
+  text-align: left;
+}
+
+tbody tr:hover {
+  background: #ffffff08;
+}

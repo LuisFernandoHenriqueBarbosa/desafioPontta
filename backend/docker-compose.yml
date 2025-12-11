@@ -1,0 +1,17 @@
+volumes:
+  ponttaDB :
+
+services:
+  db:
+    image: postgres
+
+    volumes:
+      - ponttaDB:/var/lib/mysql
+
+    environment:
+      POSTGRES_DB: ponttaDB
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: pontta#2025
+
+    ports:
+      - "5432:5432"

@@ -1,0 +1,44 @@
+<div class="container">
+  <form>
+    <div>
+      <label>ID</label>
+      <input type="text" [(ngModel)]="cliente.id" name="id" disabled>
+    </div>
+
+    <div>
+      <label>Nome</label>
+      <input type="text" [(ngModel)]="cliente.nome" name="nome">
+    </div>
+
+    <div>
+      <label>Email</label>
+      <input type="text" [(ngModel)]="cliente.email" name="email">
+    </div>
+
+    <button type="button" (click)="salvar()">Salvar</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>NOME</th>
+        <th>EMAIL</th>
+        <th>AÇÕES</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let c of clientes" >
+        <td>{{ c.id}}</td>
+        <td>{{ c.nome}}</td>
+        <td>{{ c.email}}</td>
+        <td>
+          <button (click)="editar(c)">Editar</button>
+          <button (click)="excluir(c.id!)">Excluir</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
